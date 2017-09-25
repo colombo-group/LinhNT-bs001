@@ -1,4 +1,3 @@
-# LinhNT-bs001
 <h1>Nguyễn Thùy Linh bootstrap base </h1>
 
 ## About Project
