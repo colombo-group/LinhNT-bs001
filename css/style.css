@@ -173,9 +173,6 @@ span{
     z-index: 1000000;
 
 }
-.modal-dialog{
-    top:50%;
-}
 .btn-dots{
     border: none;
     border-left: 1px solid #cccccc;
@@ -206,10 +203,12 @@ span{
 .fa-search{
     color: #999999;
 }
-.frm_seảrch input{
+.frm_search input{
     color:#ADB1B4 ;
 }
-
+.frm_search{
+    padding-top: 200px;
+}
 #mn-main1{
     width: 15%;
 }
