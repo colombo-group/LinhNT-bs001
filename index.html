@@ -4,57 +4,93 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Avision</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="tether-1.3.3/dist/js/tether.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 </head>
 <body>
-<div class="container hidden-sm-down hidden-md-down hidden-xs-down header colpd">
+<div class="container hidden-md-down header ">
     <div class="row ">
-        <div class="col-lg-3 pt-2 pb-2 colpd">
+        <div class="col-lg-3 pt-2 pb-2">
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" ><i class="fa fa-facebook icon"></i></a></li>
-                <li class="list-inline-item"><a href="#" ><i class="fa fa-twitter icon"></i></a></li>
-                <li class="list-inline-item"><a href="#" ><i class="fa fa-google-plus icon"></i></a></li>
-                <li class="list-inline-item"><a href="#" ><i class="fa fa-dribbble icon"></i></a></li>
-                <li class="list-inline-item"><a href="#" ><i class="fa fa-youtube icon"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook icon"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter icon"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus icon"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-dribbble icon"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-youtube icon"></i></a></li>
             </ul>
         </div>
         <div class="col-lg-4 offset-lg-5 pt-2 pb-2 text-right">
-            <ul class="list-inline">
-                <li class="colpd list-inline-item"><a href="#"><i class="fa fa-headphones icon"></i>&nbsp;</a>0 1800 1800
-                    1234 <span>|</span>
+            <ul class="list-inline menu menu_header">
+                <li class=" list-inline-item"><a href="#" class="fa fa-headphones">0 1800 1800 1234 </a>
+                    <span>|</span>
                 </li>
-
-                <li class="colpd list-inline-item"><a href="#"><i class="fa fa-envelope-o icon"></i>&nbsp;Email</a>
+                <li class=" list-inline-item"><a href="#" class="fa fa-envelope-o icon">Email</a>
                     <span>|</span></li>
-                <li class="colpd list-inline-item"><a href="#"><i class="fa fa-lock icon"></i>&nbsp;Login</a></li>
+                <li class=" list-inline-item"><a href="#" class="fa fa-lock icon">Login</a></li>
             </ul>
         </div>
     </div>
 </div>
-<div class="navbar_menu ">
-    <div class="container colpd">
-        <nav class="navbar navbar-toggleable-md navbar-light colpd ">
-            <button class="navbar-toggler navbar-toggler-left pt-2 pl-0" type="button" data-toggle="collapse" data-target="#mn-main2"
+<div class="navbar_menu border-bottom-0 border-top-0 bg-white" style="height:50px">
+    <div class="container height">
+        <nav class="navbar navbar-toggleable-md navbar-light p-0 height">
+            <button class="navbar-toggler navbar-toggler-left pt-2 pl-0 btn_main" type="button" data-toggle="collapse"
+                    data-target="#mn-main2"
                     aria-controls="mn-main2" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="#" class="navbar-brand text-center mr-0"><img src="img/logo.PNG"/></a>
-            <div class="collapse navbar-collapse offset-3" id="mn-main2">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+            <div class="collapse navbar-collapse pl-5 pl-lg-0" id="mn-main2">
+                <ul class="navbar-nav ml-auto menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="mnhome" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu bg-inverse" aria-labelledby="mnhome">
+                            <li class="dropdown-item"><a href="#">Landing page</a></li>
+                            <li class="dropdown-item"><a href="#">Landing page</a></li>
+                            <li class="dropdown-item"><a href="#">Item grid</a></li>
+                            <li class="dropdown-item"><a href="#">Product page</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-header text-uppercase ftsz10">Related pages</li>
+                            <li class="dropdown-item"><a href="#">Homepage 1</a></li>
+                            <li class="dropdown-item"><a href="#">Homepage 2</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Headers</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="mnheader" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            Headers
+                        </a>
+                        <ul class="dropdown-menu bg-inverse" aria-labelledby="mnheader">
+                            <li class="dropdown-item"><a href="#">Landing page</a></li>
+                            <li class="dropdown-item"><a href="#">Item grid</a></li>
+                            <li class="dropdown-item"><a href="#">Product page</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-header text-uppercase ftsz10">Related pages</li>
+                            <li class="dropdown-item"><a href="#">Homepage 1</a></li>
+                            <li class="dropdown-item"><a href="#">Homepage 2</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Magamenu</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="mnmagamenu" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            Magamenu
+                        </a>
+                        <ul class="dropdown-menu bg-inverse" aria-labelledby="mnmagamenu">
+                            <li class="dropdown-item"><a href="#">Landing page</a></li>
+                            <li class="dropdown-item"><a href="#">Item grid</a></li>
+                            <li class="dropdown-item"><a href="#">Product page</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-header text-uppercase ftsz10">Related pages</li>
+                            <li class="dropdown-item"><a href="#">Homepage 1</a></li>
+                            <li class="dropdown-item"><a href="#">Homepage 2</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portfolio</a>
@@ -62,23 +98,55 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Blog</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="mnshop" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu bg-inverse" aria-labelledby="mnshop">
+                            <li class="dropdown-item"><a href="#">Landing page</a></li>
+                            <li class="dropdown-item"><a href="#">Item grid</a></li>
+                            <li class="dropdown-item"><a href="#">Product page</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-header text-uppercase ftsz10">Related pages</li>
+                            <li class="dropdown-item"><a href="#">Homepage 1</a></li>
+                            <li class="dropdown-item"><a href="#">Homepage 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="mncontact" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu bg-inverse" aria-labelledby="mncontact">
+                            <li class="dropdown-item"><a href="#">Landing page</a></li>
+                            <li class="dropdown-item"><a href="#">Item grid</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-header">Related pages</li>
+                            <li class="dropdown-item"><a href="#">Product page</a></li>
+                            <li class="dropdown-item"><a href="#">Homepage 1</a></li>
+                            <li class="dropdown-item"><a href="#">Homepage 2</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-header">Related pages</li>
+                            <li class="dropdown-item"><a href="#">Product page</a></li>
+                            <li class="dropdown-item"><a href="#">Homepage 1</a></li>
+                            <li class="dropdown-item"><a href="#">Homepage 2</a></li>
+
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggler navbar-toggler-right navbar-toggler-block btn " type="button" data-toggle="collapse" data-target="#mn-main1" aria-controls="mn-main1" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-circle dots"></span>
-                <span class="fa fa-circle dots"></span>
-                <span class="fa fa-circle dots"></span>
+            <button class="navbar-toggler navbar-toggler-right btn-dots " type="button"
+                    data-toggle="collapse" data-target="#mn-main1" aria-controls="mn-main1" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="fa fa-circle"></span>
+                <span class="fa fa-circle"></span>
+                <span class="fa fa-circle"></span>
             </button>
-            <div class="collapse navbar-collapse" id="mn-main1">
-                <ul class="navbar-nav mr-auto" style="padding-left: 20px">
+            <div class="collapse navbar-collapse pr-4 pr-lg-0 text-right" id="mn-main1">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-lock icon"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-search icon"></i></a>
+                        <a class="nav-link" data-toggle="modal" data-target="#search" data-whatever="@getbootstrap"><i class="fa fa-search icon"></i></a>
                     </li>
 
                 </ul>
@@ -86,44 +154,56 @@
         </nav>
     </div>
 </div>
-<div style=" background: #fcfcfc;">
-    <div class="container pt-4 pb-3 ml-0 mr-0" style="width: 100%">
-        <h3 class="title_blog">Blog</h3>
-        <div class="row justify-content-center">
-            <ul class="list-inline d-flex">
-                <li class="list-inline-item"><a href="#" class="ftsz12"> <i class="fa fa-home icon"></i>&nbsp;/&nbsp;</a>
-                </li>
-                <li class="list-inline-item"><a href="#" class="ftsz12 icon"> BLOG</a></li>
-            </ul>
-        </div>
+<div class="modal fade bg-white container width" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-0" role="document">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="ftsz14" aria-hidden="true">Press [esc] or close &times;</span>
+            </button>
+            <form>
+                <div class=" frm_search d-flex width border-bottom-0">
+                    <input type="text" class="form-control pb-3 ftsz25 border-0" placeholder="Search keyword"
+                           id="key_search">
+                    <button type="submit" id="btn_search" class="border-0 bg-white"><i class=" fa fa-search ftsz25"></i></button>
+                </div>
+            </form>
     </div>
 </div>
-<div class="main_content">
-    <div class="container">
-        <div class="row" style="padding-top: 50px">
-            <div class="sidebar_left  col-12 col-sm-12 col-md-12 col-lg-9 pt-0">
+<div class="container pt-4 pb-3 width" style="background: #fcfcfc;">
+    <h3 class="text-center">Blog</h3>
+    <div class="row justify-content-center">
+        <ul class="list-inline d-flex">
+            <li class="list-inline-item"><a href="#" class="ftsz12 icon"> <i class="fa fa-home icon"></i>&nbsp; &nbsp;/&nbsp;</a>
+            </li>
+            <li class="list-inline-item"><a href="#" class="ftsz12 icon"> BLOG</a></li>
+        </ul>
+    </div>
+</div>
+<div class="width" style="background: #eeeeee">
+<div class="container post" >
+        <div class="row pt-5">
+            <div class="col-md-12 col-lg-9 pt-0 pr-lg-5">
                 <div class="row">
-                    <div class="col-12 post_img position_r p-0">
-                            <img src="img/post1.PNG">
+                    <div class="col-12 position_r p-0 ">
+                        <img src="img/post1.PNG">
                         <div class="time position_a ">
                             <p class="ftsz25 text-center m-0">25</p>
                             <p class="ftsz12 text-center m-0">MAY</p>
                         </div>
                     </div>
-                    <div class="col-12 post_content">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 pl-5 ">
-                            <ul>
+                    <div class="row bg-white p-4">
+                        <div class="col-md-12 col-lg-4 ">
+                            <ul class="list-unstyled">
                                 <li class="font-weight-bold">POSTED BY</li>
                                 <li>Avision</li>
                             </ul>
-                            <ul>
+                            <ul class="list-unstyled">
                                 <li class="font-weight-bold">CATEGORY</li>
                                 <li><i class="fa fa-check"></i>Graphic design</li>
                                 <li><i class="fa fa-check"></i>Freebies</li>
                             </ul>
 
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-8 post_content_right pl-5">
+                        <div class="col-md-12 col-lg-8">
                             <p class="ftsz18 font-weight-bold">What is Lorem Ipsum?</p>
                             <p class="text-left">It is a long established fact that a reader will be distracted by the
                                 readable content of
@@ -138,33 +218,33 @@
                                 years,
                                 sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                         </div>
-                        <div class="col-12">
-                            <a href="#" class="btn btn-secondary btn-readmore"><i class="fa fa-indent"></i>&nbsp;Read more</a>
+                        <div class="col-12 pt-2">
+                            <a href="#" class="btn btn-secondary btn-readmore"><i class="fa fa-indent"></i>&nbsp;Read
+                                more</a>
                         </div>
                     </div>
 
                 </div>
-                <div class="row pt-5 pb-4">
-                    <div class="col-12 post_img position_r p-0">
+                <div class="row pt-5 pb-4 ">
+                    <div class="col-12 position_r p-0">
                         <img src="img/post2.PNG">
                         <div class="time position_a ">
                             <p class="ftsz25 text-center m-0">13</p>
                             <p class="ftsz12 text-center m-0">MAY</p>
                         </div>
                     </div>
-                    <div class="col-12 post_content">
-                        <div class=" col-12 col-sm-12 col-md-12 col-lg-4 pl-5">
-                            <ul>
+                    <div class="row bg-white p-4">
+                        <div class="col-md-12 col-lg-4">
+                            <ul class="list-unstyled">
                                 <li class="font-weight-bold">POSTED BY</li>
                                 <li>Avision Staff</li>
                             </ul>
-                            <ul>
+                            <ul class="list-unstyled">
                                 <li class="font-weight-bold">CATEGORY</li>
                                 <li><i class="fa fa-check"></i>Graphic design</li>
                             </ul>
-
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-8 post_content_right pl-5">
+                        <div class="col-md-12 col-lg-8">
                             <p class="ftsz18 font-weight-bold">What is Lorem Ipsum?</p>
                             <p class="text-left">It is a long established fact that a reader will be distracted by the
                                 readable content of
@@ -179,136 +259,172 @@
                                 years,
                                 sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                         </div>
-                        <div class="col-12  ">
-                            <a href="#" class="btn btn-secondary btn-readmore"><i class="fa fa-indent"></i>&nbsp;Read more</a>
+                        <div class="col-12 pt-2">
+                            <a href="#" class="btn btn-secondary btn-readmore"><i class="fa fa-indent"></i>&nbsp;Read
+                                more</a>
                         </div>
                     </div>
 
                 </div>
                 <hr/>
-                <div class="col-12 phantrang colpd">
-                    <ul class="pagination justify-content-end d-flex">
-                        <li class="disabled"><a href="#">&larr;</a></li>
-                        <li class="active"><a href="#" class="btn-link">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&rarr;</a></li>
-                    </ul>
+                <div class=" pr-0 mt-5 mb-5">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">&larr;</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">&rarr;</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="sidebar_right col-12 col-sm-12 col-md-12 col-lg-3 ">
-                <div class="row d-inline-block">
-                    <p class="sidebar_title pb-3 font-weight-bold">CATEGORIES</p>
-                    <nav class="nav flex-column menu_categories">
-                        <a href="#" class="nav-link active colpd"><i class="fa fa-chevron-left"></i>Architecture</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Art Direction</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Branding</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Fashion</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Graphic Design</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Illustration</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Industry</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Interaction Design</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Mostion Graphic</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Photographi</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>UI/UX</a>
-                        <a href="#" class="nav-link colpd"><i class="fa fa-chevron-left"></i>Web design</a>
-                    </nav>
+            <div class="col-md-12 col-lg-3 pl-md-0">
+                <p class="border-bottom-0 pb-3 font-weight-bold">CATEGORIES</p>
+                <ul class=" menu menu_cate list-unstyled">
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Art Direction</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Illustration</a></li>
+                    <li><a href="#">Industry</a></li>
+                    <li><a href="#">Interaction Design</a></li>
+                    <li><a href="#">Mostion Graphic</a></li>
+                    <li><a href="#">Photographi</a></li>
+                    <li><a href="#">UI/UX</a></li>
+                    <li><a href="#">Web design</a></li>
+                </ul>
+                <div class="row mt-4">
+                    <ul class="nav nav-tabs mb-2 width" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#popular" role="tab">POPULAR</a>
+                        </li>
+                        <li class="nav-item pr-3">
+                            <a class="nav-link font-weight-bold" data-toggle="tab" href="#latest" role="tab">LATEST</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane in active" id="popular">
+                            <div class="row event mt-3">
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-4"><a href="#">
+                                    <img src="img/img_p1.PNG"></a>
+                                </div>
+                                <div class="col-8 col-sm-9 col-md-10 col-lg-8">
+                                    <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum?</a>
+                                    <p class="comment ftsz12">18 comments</p>
+                                </div>
+                            </div>
+                            <div class="row event mt-3">
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-4"><a href="#">
+                                    <img src="img/img_p2.PNG"></a>
+                                </div>
+                                <div class="col-8 col-sm-9 col-md-10 col-lg-8">
+                                    <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum?</a>
+                                    <p class="comment ftsz12">9 comments</p>
+                                </div>
+                            </div>
+                            <div class="row event mt-3">
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-4"><a href="#">
+                                    <img src="img/img_p3.PNG"></a>
+                                </div>
+                                <div class="col-8 col-sm-9 col-md-10 col-lg-8">
+                                    <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum?</a>
+                                    <p class="comment ftsz12">21 comments</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="latest">
+                            <div class="row event mt-3">
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-4 pl-0"><a href="#">
+                                    <img src="img/img_p1.PNG"></a>
+                                </div>
+                                <div class="col-8 col-sm-9 col-md-10 col-lg-8">
+                                    <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum 1?</a>
+                                    <p class="comment ftsz12">18 comments</p>
+                                </div>
+                            </div>
+                            <div class="row event mt-3">
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-4 pl-0"><a href="#"><img src="img/img_p2.PNG"
+                                                                                                    ></a>
+                                </div>
+                                <div class="col-8 col-sm-9 col-md-10 col-lg-8">
+                                    <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum 1?</a>
+                                    <p class="comment ftsz12">9 comments</p>
+                                </div>
+                            </div>
+                            <div class="row event mt-3">
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-4 pl-0"><a href="#"><img src="img/img_p3.PNG"></a>
+                                </div>
+                                <div class="col-8 col-sm-9 col-md-10 col-lg-8">
+                                    <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum 1?</a>
+                                    <p class="comment ftsz12">21 comments</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
 
                 </div>
-                <div class="row popular">
-                    <div class="row">
-                        <ul class="nav menu_pplt">
-                            <li class="nav-item active pb-2"><a href="#" class="nav-link font-weight-bold"> POPULAR</a>
-                            </li>
-                            <li class="nav-item pb-2"><a href="#" class="nav-link font-weight-bold"> LATEST</a></li>
-                        </ul>
-                    </div>
-                    <div class="row event mt-3">
-                        <div class="col-4 col-sm-3 col-md-2 col-lg-4 pl-0"><a href="#"><img src="img/img_p1.PNG"
-                                                                                            width="80"></a>
-                        </div>
-                        <div class="col-8 col-sm-9 col-md-10 col-lg-8">
-                            <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum?</a>
-                            <p class="comment ftsz12">18 comments</p>
-                        </div>
-                    </div>
-                    <div class="row event mt-3">
-                        <div class="col-4 col-sm-3 col-md-2 col-lg-4 pl-0"><a href="#"><img src="img/img_p2.PNG"
-                                                                                            width="80"></a>
-                        </div>
-                        <div class="col-8 col-sm-9 col-md-10 col-lg-8">
-                            <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum?</a>
-                            <p class="comment ftsz12">9 comments</p>
-                        </div>
-                    </div>
-                    <div class="row event mt-3">
-                        <div class="col-4 col-sm-3 col-md-2 col-lg-4 pl-0"><a href="#"><img src="img/img_p3.PNG"
-                                                                                            width="80"></a>
-                        </div>
-                        <div class="col-8 col-sm-9 col-md-10 col-lg-8">
-                            <a href="#" class="event_title "> What is Lorem Ipsum Lorem Ipsum?</a>
-                            <p class="comment ftsz12">21 comments</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row tags ">
-                    <p class="col-12 colpd sidebar_title pb-3 font-weight-bold">TAGS</p>
-                    <div>
-                        <a href="#" class="btn btn-primary btn_tag">Creative</a>
-                        <a href="#" class="btn btn-primary btn_tag">Web design</a>
-                        <a href="#" class="btn btn-primary btn_tag">One Page</a>
-                        <a href="#" class="btn btn-primary btn_tag">Agency</a>
-                        <a href="#" class="btn btn-primary btn_tag">Professional</a>
-                        <a href="#" class="btn btn-primary btn_tag">Responsive</a>
-                        <a href="#" class="btn btn-primary btn_tag">Retina</a>
-                        <a href="#" class="btn btn-primary btn_tag">Template Bundle</a>
-                        <a href="#" class="btn btn-primary btn_tag">Shop</a>
-                        <a href="#" class="btn btn-primary btn_tag">UI/UX</a>
+                <div class="row mt-4">
+                    <p class="col-12 pl-0 border-bottom-0 pb-3 font-weight-bold">TAGS</p>
+                    <div class="btn_tag">
+                        <a href="#">Creative</a>
+                        <a href="#">Web design</a>
+                        <a href="#">One Page</a>
+                        <a href="#">Agency</a>
+                        <a href="#">Professional</a>
+                        <a href="#">Responsive</a>
+                        <a href="#">Retina</a>
+                        <a href="#">Template Bundle</a>
+                        <a href="#">Shop</a>
+                        <a href="#">UI/UX</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <div class="container footer ftsz12">
-    <div class="row img_footer">
-        <img src="img/logo_footer.PNG">
+    <div class="pt-2">
+        <img src="img/logo_footer.PNG" class="img_footer">
     </div>
     <hr/>
-    <div class="row menu_footer ">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-3 colpd">
-            <ul class="menu_media list-inline ">
-                <li class="list-inline-item ml-0"><a href="#"><i class="fa fa-facebook icon"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter icon"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fa fa-google icon"></i></a></li>
+    <div class="row pt-2">
+        <div class=" col-md-12 col-lg-3 pl-0">
+            <ul class="menu_media list-inline">
+                <li class="list-inline-item "><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
             </ul>
         </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-3 colpd">
-            <ul class="mn_avision list-unstyled">
+        <div class="col-md-12 col-lg-3 pl-0">
+            <ul class=" list-unstyled">
                 <li class="mn_bold">AVISION</li>
                 <li>4676 devonshire drive</li>
                 <li>ravenna, oh 44266</li>
             </ul>
         </div>
-        <div class=" col-12 col-sm-12 col-md-12 col-lg-3 colpd">
-            <ul class="mn_email list-unstyled">
+        <div class="  col-md-12 col-lg-3 pl-0">
+            <ul class=" list-unstyled menu">
                 <li class="mn_bold">EMAIL</li>
-                <li style="padding-bottom: 10px"><i class="fa fa-envelope-o"></i>&nbsp; &nbsp;<a style="color: #60cac7;" href="#">HELLO@AVISION.COM</a>
+                <li class="pb-2">
+                    <a href="#" class="fa fa-envelope-o" style="color: #1abc9c!important;"> &nbsp; &nbsp;HELLO@AVISION.COM</a>
                 </li>
                 <li class="mn_bold">CUSTOMER SUPPORT</li>
                 <li><i class="fa fa-mobile"></i>&nbsp; &nbsp; 0 1800 1800 1234</li>
             </ul>
         </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-3 colpd">
-            <p class="text-uppercase  text-right"><i class="fa fa-copyright" aria-hidden="true"></i>&nbsp; 2015
+        <div class=" col-md-12 col-lg-3">
+            <p class="text-uppercase  text-right"><i class="fa fa-copyright"></i>&nbsp; 2015
                 TITANICTHEME.ALL RIGHT RESERVED.</p>
         </div>
     </div>
 </div>
-
 </body>
 </html>

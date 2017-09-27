@@ -3183,7 +3183,7 @@ tbody.collapse.show {
   height: 1px;
   margin: 0.5rem 0;
   overflow: hidden;
-  background-color: #eceeef;
+  background-color: #cccccc;
 }
 
 .dropdown-item {
@@ -3848,26 +3848,30 @@ tbody.collapse.show {
 }
 
 .nav-tabs .nav-link {
+  color: #cccccc;
+  font-weight: bold;
   border: 1px solid transparent;
   border-top-right-radius: 0.25rem;
   border-top-left-radius: 0.25rem;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-  border-color: #eceeef #eceeef #ddd;
+  border-bottom: 1px solid #cccccc;
+  color: #1abc9c;
 }
 
 .nav-tabs .nav-link.disabled {
   color: #636c72;
+  font-weight: bold;
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #464a4c;
-  background-color: #fff;
-  border-color: #ddd #ddd #fff;
+  color: #222222;
+  font-weight: bold;
+  border-bottom: 2px solid #222222;
 }
 
 .nav-tabs .dropdown-menu {
@@ -4782,16 +4786,16 @@ tbody.collapse.show {
 
 .page-item.active .page-link {
   z-index: 2;
-  color: #fff;
-  background-color: #0275d8;
-  border-color: #0275d8;
+  color: #444444;
+  background-color: white;
+  border-color: #cccccc;
 }
 
 .page-item.disabled .page-link {
-  color: #636c72;
+  color: white;
   pointer-events: none;
   cursor: not-allowed;
-  background-color: #fff;
+  background-color: #cccccc;
   border-color: #ddd;
 }
 
@@ -4801,21 +4805,22 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #0275d8;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  color: white;
+  font-weight: bold;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
 }
 
 .page-link:focus, .page-link:hover {
-  color: #014c8c;
+  color: white;
   text-decoration: none;
-  background-color: #eceeef;
-  border-color: #ddd;
+  background-color: #29bb9c;
+  border-color: #29bb9c;
 }
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: 14px;
 }
 
 .pagination-lg .page-item:first-child .page-link {
@@ -4965,7 +4970,7 @@ a.badge:focus, a.badge:hover {
 
 .alert-dismissible .close {
   position: relative;
-  top: -0.75rem;
+  top: -1.2rem!important;
   right: -1.25rem;
   padding: 0.75rem 1.25rem;
   color: inherit;
@@ -5550,7 +5555,6 @@ button.close {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
     margin: 30px auto;
   }
   .modal-sm {
@@ -6133,7 +6137,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .border-top-0 {
-  border-top: 0 !important;
+  border-top: 1px solid #cccccc!important;
 }
 
 .border-right-0 {
@@ -6141,7 +6145,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .border-bottom-0 {
-  border-bottom: 0 !important;
+  border-bottom: 1px solid #cccccc!important;
 }
 
 .border-left-0 {
