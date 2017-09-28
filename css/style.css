@@ -93,7 +93,7 @@ a {
     color: #555555 !important;
 }
 
-.menu li a:hover, .menu li a.active {
+.menu li a:hover,.fa-search:hover, .menu li a.active {
     color: #1abc9c !important;
 }
 
