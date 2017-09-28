@@ -10,6 +10,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="tether-1.3.3/dist/js/tether.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
 <div class="container hidden-md-down header ">
@@ -42,8 +43,7 @@
             <div class="collapse navbar-collapse pl-5 pl-lg-0" id="mn-main2">
                 <ul class="navbar-nav ml-auto menu">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="mnhome" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
+                        <a class="nav-link " href="#" id="mnhome" data-toggle="dropdown" >
                             Home
                         </a>
                         <ul class="dropdown-menu bg-inverse" aria-labelledby="mnhome">
@@ -58,8 +58,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="mnheader" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
+                        <a class="nav-link" href="#" id="mnheader" data-toggle="dropdown">
                             Headers
                         </a>
                         <ul class="dropdown-menu bg-inverse" aria-labelledby="mnheader">
@@ -73,8 +72,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="mnmagamenu" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
+                        <a class="nav-link" href="#" id="mnmagamenu" data-toggle="dropdown">
                             Magamenu
                         </a>
                         <ul class="dropdown-menu bg-inverse" aria-labelledby="mnmagamenu">
@@ -94,8 +92,7 @@
                         <a class="nav-link active" href="#">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="mnshop" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
+                        <a class="nav-link " href="#" id="mnshop" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false" >
                             Shop
                         </a>
                         <ul class="dropdown-menu bg-inverse" aria-labelledby="mnshop">
@@ -109,8 +106,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="mncontact" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
+                        <a class="nav-link" href="#" id="mncontact" data-toggle="dropdown" >
                             Contact
                         </a>
                         <ul class="dropdown-menu bg-inverse" aria-labelledby="mncontact">
@@ -416,5 +412,12 @@
         </div>
     </div>
 </div>
+<script>
+    $('ul.navbar-nav li.dropdown').hover(function () {
+        $(this).find('.dropdown-menu').stop(true, true).fadeIn(100);
+    }, function () {
+        $(this).find('.dropdown-menu').stop(true, true).fadeOut(100);
+    });
+</script>
 </body>
 </html>
